@@ -1,0 +1,111 @@
+/* Khởi tạo cơ bản cho toàn bộ trang */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* --- Thanh điều hướng (Navbar) --- */
+.navbar {
+    background-color: #4caf50; /* Màu xanh lá */
+    color: #ffffff;
+    display: table;
+    width: 100%;
+    padding: 15px 30px;
+}
+
+.logo {
+    display: table-cell;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.nav-links {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* --- Khu vực giới thiệu chính (Hero Section) --- */
+.hero-section {
+    background-color: #f2f2f2; /* Màu xám nhạt */
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 25px;
+}
+
+/* Nút bấm Get Started */
+.btn-get-started {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-get-started:hover {
+    background-color: #45a049;
+}
+
+/* --- Khung tính năng (Features Section) --- */
+.features-container {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Đảm bảo các cột có độ rộng bằng nhau */
+    border-collapse: separate;
+    border-spacing: 20px; /* Tạo khoảng cách giữa các khối tính năng */
+    padding: 10px 10px;
+}
+
+.feature-card {
+    display: table-cell;
+    background-color: #dddddd; /* Màu xám đậm hơn một chút */
+    color: #333333;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+/* --- Chân trang (Footer) --- */
+.footer {
+    background-color: #333333; /* Màu xám đen */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 13px;
+    margin-top: 10px;
+}
