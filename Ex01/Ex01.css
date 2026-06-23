@@ -1,0 +1,66 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Toàn trang */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #2196f3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Nội dung */
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile p {
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: #2196f3;
+    text-decoration: none;
+}
