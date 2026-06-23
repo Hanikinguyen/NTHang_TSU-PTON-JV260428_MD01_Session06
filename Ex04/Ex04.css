@@ -1,0 +1,161 @@
+/* Khởi tạo cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* --- Header / Banner màu xanh lá --- */
+.blog-header {
+    background-color: #4caf50;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.blog-header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: #a3e2a5; /* Màu xanh nhạt hơn hoặc bạn có thể đổi thành trắng #ffffff */
+    text-decoration: underline;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+/* --- Thân trang (Bố cục 2 cột bằng Table layout để tương thích tốt) --- */
+.main-container {
+    display: table;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* Cột trái (Chuyên mục) */
+.sidebar {
+    display: table-cell;
+    width: 25%;
+    vertical-align: top;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+}
+
+.sidebar ul li a {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Cột phải (Danh sách bài viết) */
+.content-area {
+    display: table-cell;
+    width: 75%;
+    vertical-align: top;
+    padding-left: 30px;
+}
+
+/* Từng bài viết */
+.post {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Đường gạch cuối bài viết cuối cùng có thể ẩn đi nếu muốn */
+.post:last-child {
+    border-bottom: none;
+}
+
+.post h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.post-excerpt {
+    font-size: 14px;
+    color: #333333;
+    margin-top: 15px;
+}
+
+/* Khung giả lập hình ảnh trong bài viết */
+.post-image-placeholder {
+    width: 280px;
+    height: 140px;
+    display: block;
+    position: relative;
+    border-radius: 4px;
+}
+
+/* Màu nền bài viết 1 */
+.img-yellow {
+    background-color: #f4d03f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-yellow .js-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #323330;
+}
+
+/* Màu nền bài viết 2 */
+.img-dark {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-dark .js-badge {
+    background-color: #f4d03f;
+    color: #000000;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+/* --- Chân trang (Footer) --- */
+.blog-footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 13px;
+    margin-top: 40px;
+}
